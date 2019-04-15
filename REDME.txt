@@ -1,0 +1,15 @@
+Folder MBTA: the source code
+
+Put Folder Python_MBTA into your desktop
+
+Then please change the file path firstly.
+
+step1_group.py: Line 56, 84, 90
+
+step2_convert.py: Line 28, 35, 39, 55, 59, 63, 70, 74, 93
+
+step3_combine.py: Line 18, 24, 35, 40, 43
+
+step4_heatmap.py: Line 22, 53, 56
+
+At last, you can run .py files one by one.

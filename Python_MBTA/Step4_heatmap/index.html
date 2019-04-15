@@ -1,0 +1,36 @@
+<html ng-app style="height:100%;width:100%">
+  <head>
+    <title>MBTA PYTHON PROJECT</title>
+    <script src="./angular10.js"></script>
+    <script>
+        function Controller($scope) {
+            $scope.choice = '1_3';
+        }
+    </script>
+  </head>
+
+  <body ng-controller='Controller' style="height:100%;width:100%">
+    <div style="align:center;height:100%;width:15%;float:right">
+	    <p>Time during the day:</p>
+	    <select id="selectTime" autocomplete="off" ng-model="choice">
+	        <option value="1_3" ng-selected="true">01:00 - 03:00</option>
+	        <option value="3_5">03:00 - 05:00</option>
+	        <option value="5_7">05:00 - 07:00</option>
+	        <option value="7_9">07:00 - 09:00</option>
+	        <option value="9_11">09:00 - 11:00</option>
+	        <option value="11_13">11:00 - 13:00</option>
+	        <option value="13_15">13:00 - 15:00</option>
+	        <option value="15_17">15:00 - 17:00</option>
+	        <option value="17_19">17:00 - 19:00</option>
+	        <option value="19_21">19:00 - 21:00</option>
+	        <option value="21_23">21:00 - 23:00</option>
+	        <option value="23_1">23:00 - 01:00</option>
+	    </select>
+    </div>
+
+    <div style="align:center;height:100%;width:85%">
+        <iframe style="height:100%;width:85%" src="./heatmap{{choice}}.html" frameborder="no" border="0" scrolling="no"></iframe>
+    </div>
+
+  </body>
+</html>
