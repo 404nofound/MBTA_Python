@@ -1,29 +1,29 @@
 # MBTA - Python
 
-Drawing the heat map for train stations during 24 hours. In this project, we only cover the Red, Orange, Blue, Mattapan, Green B, Green C, Green D, Green E lines.
+Drawing the heat map for train stations during 24 hours. In this project, we only cover the `Red, Orange, Blue, Mattapan, Green B, Green C, Green D, Green E` lines.
 
-### The Heatmap for Boston Train Stations
+## The Heatmap for Boston Train Stations
 
 <img width="80%" height="80%" src="https://github.com/404nofound/Resource/blob/master/Images/MBTA_Python/1.png">
 
-### UML Sequence Diagram (For whole project)
+## UML Sequence Diagram (For whole project)
 
 <img width="80%" height="80%" src="https://github.com/404nofound/Resource/blob/master/Images/MBTA_Python/2.png"/>
 
-### Goals & Functions
+## Goals & Functions
 * Show every train station on the map.
 * Draw the heat points for every station.
 * All heat points will combine and form the heat map.
 * Generating heat map for different time period.
 
-### Data
+## Data
 * There are 7 months’ (2018), about 160,000 pieces for each month, data available on MBTA website.
 * Every piece of data includes Station Name, Station Id, Date, Time and People Number.
 * All stations’ location data (latitude, longitude), used to show station on map (lat/log).
  
 <img width="80%" height="80%" src="https://github.com/404nofound/Resource/blob/master/Images/MBTA_Python/3.png"/>
  
-### Approach & Details
+## Approach & Details
 Step 1: Categorize for Every Station Every Month
 >>1.	Using Pandas Library – Based on NumPy.
 >>2.	Divide all data by stations.
